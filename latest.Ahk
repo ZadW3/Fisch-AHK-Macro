@@ -1,5 +1,5 @@
 ; Change the Control value to whatever your rod's Control value is 
-Control := 0.05
+Control := 0.15
 
 ; Don't edit anything beyond this point
 barWidth := Floor(96 + (Control*326.67))
@@ -10,7 +10,7 @@ barStart := 247 ; LEFT pixel of the FULL reel bar
 barEnd := 570 ; RIGHT pixel of the FULL reel bar
 lastPos := 409 - (barWidth/2) ; Last position of the bar, middle of the reel bar
 
-f::  ; When "F" key is pressed
+f::  ; When "P" key is pressed
     toggle := !toggle  ; Toggle the state
     if (toggle) {
         ; Start the loop in a separate thread
